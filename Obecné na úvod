@@ -1,7 +1,9 @@
 Před absolvováním kurzu Datové akademie jsem měl s SQL nulovou zkušenost. 
 Ačkoliv v zaměstnání s daty pracuji, tak pracovním prostředím je Excel, kde si vystačím se základními vzorečky, funkcemi, 
 filtrováním, vyhledáváním dat a přenášením do vizualizací (grafy). včetně pivotek a průřezů.  
-Na SQL mi osobně přijde nejtěžší horší "vizualizace" podoby tabulky po jednotlivých krocích (v prostředí DBeaver jedno z polí okna na obrazovce). Něco, co na první pohled 
+Na SQL mi osobně přijde nejtěžší horší "vizualizace" podoby tabulky po jednotlivých krocích (v prostředí DBeaver jedno 
+z polí okna na obrazovce). Něco, co na první pohled 
 jasně vidím při aplikování filtrů a vzorečků v Excelu (funguje/nefunguje). 
-Ačkoliv se jednotlivé skriptové příkazy dají srozumitělně číst jako anglické věty, tak nemám zažitou formální stránku příkazů, zjm. přesné uvádění pomocných znaků (čárky, závorky, mezery apod.), .
-Proto budu kvůli úspoře času na kontrolu svého sktiptu používat AI nástroj. 
+Ačkoliv se jednotlivé skriptové příkazy dají srozumitělně číst jako anglické věty, tak nemám zažitou formální stránku příkazů,
+zjm. přesné uvádění pomocných znaků (čárky, závorky, mezery apod.). Proto budu kvůli úspoře času na kontrolu svého sktiptu 
+používat AI nástroj. 
