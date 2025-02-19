@@ -1,7 +1,6 @@
--- Otázka č.2: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období 
--- v dostupných datech cen a mezd?
+-- Otázka č.2: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 
--- Podivam se na zdrojove tabulky a ciselniky a prostuduji.
+-- Podivam se na zdrojove tabulky a ciselniky a prostuduji:
 
 SELECT *
 FROM czechia_price cp; 
@@ -58,7 +57,7 @@ FROM czechia_price cp
 WHERE category_code IN (111301, 114201)
 ORDER BY cp.date_from;
 
--- Vidim, ze obdobi cen jsou po tydnech. Navic cen pro obe potraviny je vice v jednom tydnu ... 
+-- Vidim, ze obdobi cen jsou po tydnech. Navic cen pro obe potraviny je vice v jednom tydnu... 
 -- Budu asi muset zprumerovat tyto hodnoty.
 -- Pripomenu si tabulku mezd kvuli prvnimu a poslednimu obdobi. 
 
@@ -207,7 +206,5 @@ ORDER BY v_2otazka_ceny.rok, v_2otazka_ceny.potravina DESC;
 -- Za prvni srovnatelne obdobi bylo mozne si koupit 1405l mléka a 1358kg chleba. 
 -- Za posledni srovnatelne obdobi bylo mozne koupit 1803l mléka a 1471kg chleba. 
 -- Vysv.: Porovnavanymi obdobimi jsou 1. ctvrtleti roku 2006 a 4. ctvrtleti roku 2018.  
-
--- nejvice me potrapilo prevedeni data po tzdnech an ctvrtleti a pak royhodnuti, ktera jsou relevantni obdobi
 
 		
