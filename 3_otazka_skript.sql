@@ -9,8 +9,7 @@ LIMIT 20;
 SELECT *
 FROM czechia_price_category AS cpc;
 
--- spojim si tabulky pres code
-
+-- Spojim si tabulky pres code.
 
 CREATE OR REPLACE VIEW v_3otazka_full 
 AS
@@ -55,7 +54,7 @@ FROM v_3otazka_prum_cena
 WHERE rok = 2006 OR rok = 2018;
 
 
--- Pridame vypocet procentualni zmeny mezi temito dvema roky, napr.:
+-- Pridam vypocet procentualni zmeny mezi temito dvema roky, napr.:
 
 SELECT potravina, 
        AVG(CASE WHEN rok = 2006 THEN prumerna_cena END) AS cena_2006,
@@ -67,7 +66,8 @@ WHERE rok IN (2006, 2018)
 GROUP BY potravina
 ORDER BY procentualni_zmena ASC;
 
--- Vidím, že nekěté potraviny zlevnily (zaporný rozdíl). Toto musim zohlednit v odpovedi. 
+-- Vidím, že nektere potraviny zlevnily (zaporny rozdil). Toto musim zohlednit v odpovedi!
+
 -- Vyradim Jakostni vino bílé, pro ktere neexistuje udaj za rok rok 2006: 
 
 SELECT *
@@ -78,8 +78,7 @@ ORDER BY YEAR(date_from) ASC;
 
 -- ODPOVED: 
 -- V porovnavanem obdobi let 2006 a 2018 nejmene zdrazila kategorie Banany zlute.
--- V tomto obdobo dokonce existuji dve kategorie potravin, 
--- které zlevnily: Cukr krystalový a Rajská jablka. 
+-- V tomto obdobo dokonce existuji dve kategorie potravin, které zlevnily: Cukr krystalový a Rajská jablka. 
  
 
 
