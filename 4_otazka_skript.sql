@@ -113,7 +113,7 @@ ORDER BY rozdil_mezi_procenty DESC;
 -- Vysledek je prekvapivy.
 -- Zatimco udaje k mezirocnimu narustu mezd jsou celkem uveritelne (do 10%),
 -- tak nektere ceny potravin mezirocne vyletely o desitky procent. 
--- Mzdam verim, ale musim si namatkou overit potraviny z predchozich selectů.
+-- Mzdam verim, ale musim si namatkou overit Papriky z predchozich selectů a primarni tabulky czechia_price. Sedi to. 
 
 -- ODPOVED
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
