@@ -2,7 +2,7 @@
  -- Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší 
  -- než růst mezd (větší než 10%)?
 
- -- Zatim nejmene jednozancne zadani. Trva mi chvili ujasnit si, na co se otazka pta a co pro odpoved musim zjistit.
+ -- Zatim nejmene jednoznacne zadani. Trva mi chvili ujasnit si, na co se otazka pta a co pro odpoved musim zjistit.
  -- Asi je to takto: Existuje nejaka potravina, jejiz mezirocni zdrazeni je vice nez 10% nad  
  -- narustem mezirocni mzdy? Takto k zadani budu pristupovat. 
    
@@ -119,40 +119,40 @@ ORDER BY rozdil_mezi_procenty DESC;
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
 -- Serazeno podle nejvyssiho rozdilu rustu mezd a cen.  
 
--- 2007	Papriky							87.94%
--- 2013	Konzumní brambory				61.88%
+-- 2007	Papriky					87.94%
+-- 2013	Konzumní brambory			61.88%
 -- 2012	Vejce slepičí čerstvá			51.83%
--- 2018	Mrkev							41.67%
+-- 2018	Mrkev					41.67%
 -- 2008	Pšeničná mouka hladká			35.26%
 -- 2008	Rýže loupaná dlouhozrnná		29.32%
 -- 2011	Pšeničná mouka hladká			28.11%
--- 2010	Konzumní brambory				27.93%
--- 2017	Máslo							27.17%
+-- 2010	Konzumní brambory			27.93%
+-- 2017	Máslo					27.17%
 -- 2011	Pečivo pšeničné bílé			26.62%
--- 2015	Mrkev							25.88%
--- 2017	Eidamská cihla					22.4%
--- 2012	Rajská jablka červená kulatá	21.95%
--- 2010	Máslo							21.3%
+-- 2015	Mrkev					25.88%
+-- 2017	Eidamská cihla				22.4%
+-- 2012	Rajská jablka červená kulatá		21.95%
+-- 2010	Máslo					21.3%
 -- 2017	Vejce slepičí čerstvá			20.67%
--- 2011	Cukr krystalový					20.55%
--- 2010	Rajská jablka červená kulatá	18.97%
+-- 2011	Cukr krystalový				20.55%
+-- 2010	Rajská jablka červená kulatá		18.97%
 -- 2013	Pšeničná mouka hladká			17.26%
--- 2010	Papriky							17.05%
+-- 2010	Papriky					17.05%
 -- 2007	Pšeničná mouka hladká			15.66%
 -- 2008	Pečivo pšeničné bílé			15.63%
--- 2007	Pomeranče						15.36%
+-- 2007	Pomeranče				15.36%
 -- 2011	Chléb konzumní kmínový			15.29%
--- 2011	Máslo							15.24%
--- 2013	Máslo							14.53%
+-- 2011	Máslo					15.24%
+-- 2013	Máslo					14.53%
 -- 2008	Rostlinný roztíratelný tuk		13.75%
 -- 2008	Chléb konzumní kmínový			13.69%
--- 2011	Jablka konzumní					13.06%
--- 2013	Eidamská cihla					12.4%
--- 2013	Jablka konzumní					12.21%
--- 2012	Banány žluté					12.01%
--- 2013	Kuřata kuchaná celá				11.73%
--- 2008	Mrkev							11.35%
--- 2016	Konzumní brambory				10.45%
+-- 2011	Jablka konzumní				13.06%
+-- 2013	Eidamská cihla				12.4%
+-- 2013	Jablka konzumní				12.21%
+-- 2012	Banány žluté				12.01%
+-- 2013	Kuřata kuchaná celá			11.73%
+-- 2008	Mrkev					11.35%
+-- 2016	Konzumní brambory			10.45%
 -- 2007	Chléb konzumní kmínový			10.06%
 
 
