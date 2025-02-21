@@ -113,9 +113,18 @@ ORDER BY rozdil_mezi_procenty DESC;
 -- Vysledek je prekvapivy.
 -- Zatimco udaje k mezirocnimu narustu mezd jsou celkem uveritelne (do 10%),
 -- tak nektere ceny potravin mezirocne vyletely o desitky procent. 
--- Mzdam verim, ale musim si namatkou overit Papriky z predchozich selectů a primarni tabulky czechia_price. Sedi to. 
+-- Mzdam verim, ale musim si namatkou overit Papriky z predchozich selectů a primarni tabulky czechia_price. Napr.:
 
--- ODPOVED
+SELECT 
+    YEAR(date_from) AS rok,
+    ROUND(AVG(value), 2) AS prumerna_cena
+FROM v_3otazka_full
+WHERE category_code = 117103
+AND YEAR(date_from) IN (2006, 2007)
+GROUP BY YEAR(date_from)
+ORDER BY rok;
+
+-- ODPOVED: 
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
 -- Serazeno podle nejvyssiho rozdilu rustu mezd a cen.  
 
