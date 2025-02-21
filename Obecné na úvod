@@ -14,3 +14,12 @@ používat AI nástroj.
 Jelikož jsme začátečník, tak jsem se snažil psát přikazy polopatisticky, od začátku každé otázky. Věřím, že efektivněji lze pracovat, 
 když se dají využít výsledky z předchozí otázky. Bral jsme to jako opakování, včetně všech těch základních selectů. Také jsem si průběžně 
 dělal views, abych nemusel kopírovat řádky kodu. 
+
+Nedelal jsem pruvodni listinu, ale svuj postup, krokz a uvahy jsme zaclenil jako --poznamky--  primo do skritpu, aby bylo hned videt co, jk a proc jsme delal.
+Prislo mi to efektivnejsi i pro ctenare mit to hned pred ocima s kodem. 
+
+Prislo mi, ze jsem si vystacil s oemzenym souborme prikazu y cele skaly sql. V podstate jsem jen vybiral, slucola, radil, pocital rozdily a vytvarel si prubeyna views. 
+V praxi tohle urcite nebude stacit, ale jsem porad zacatecnik bez potrebne denni praxe. 
+
+Poyadovene tabulky jsem si vytvoril az nakonec, z jednotlivych relevantnich selectů nebo views. Praci bych si asi usnadil, kdybych je vytvoril hned na zacatku, ale chtel
+jsem postupne pracovat s co nejomezenejsemi selecty. Dalo by se vsak urcite pracovat i efektivneji. 
