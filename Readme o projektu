@@ -1,0 +1,23 @@
+Před absolvováním kurzu Datové akademie jsem měl s SQL nulovou zkušenost. 
+Ačkoliv v zaměstnání s daty pracuji, tak pracovním prostředím je Excel, kde si vystačím se základními vzorečky, funkcemi, 
+filtrováním, vyhledáváním dat a přenášením do vizualizací (grafy). včetně pivotek a průřezů. CHápu,že Excel má své omezení zjm. v počtu
+řádků. 
+
+Na SQL mi osobně přijde nejtěžší horší "vizualizace" podoby tabulky po jednotlivých krocích (v prostředí DBeaver jedno 
+z (půl)polí okna na obrazovce). Něco, co na první pohled jasně vidím při aplikování filtrů a vzorečků v Excelu (funguje/nefunguje). 
+V Excelu se mi rychleji píší i vzorečky, nepotřebuji složitě napsané prikazy v sql, ve kterych navic mohu udělat syntaktickou či jinou chybu. 
+
+Ačkoliv se jednotlivé skriptové příkazy dají srozumitělně číst jako anglické věty, tak nemám zažitou formální stránku příkazů,
+zjm. přesné uvádění pomocných znaků (čárky, závorky, mezery apod.). Proto jsem kvůli úspoře času na kontrolu svého sktiptu 
+používat AI nástroj, který mi někdy i pomohl s pochopením proč ten a ten příkaz. 
+
+Jelikož jsme začátečník, tak jsem se snažil psát přikazy polopatisticky, od začátku každé otázky. Věřím, že efektivněji lze pracovat, 
+když se dají využít výsledky z předchozí otázky. Bral jsme to jako opakování, včetně všech těch základních selectů. Také jsem si průběžně 
+dělal views, abych nemusel kopírovat řádky kódu. Prišlo mi, že jsem si vystačil se zlomkem příkazů z celé skaly sql. V podstate jsem jen vybiral, 
+slučoval, řadil, počítal rozdíly a vytvářel si průběžné views. V praxi tohle určitě nebude stačit, ale jsem pořád začátečník bez potřebné denní praxe. 
+
+Nedělal jsem průvodní listinu, ale svůj postup, kroky a úvahy jsem začlenil jako --poznamky--  přímo do skriptu, aby bylo hned vidět co, jak a proč jsem dělal.
+Přišlo mi to efektivnejsi i pro čtenáře  mít to hned před očima s kódem. 
+
+Požadované tabulky jsem si vytvořil až nakonec, z jednotlivych relevantnich selectů nebo views. Práci bych si asi usnadil, kdybych je vytvořil hned na začátku, ale chtěl
+jsem postupne pracovat s co nejomezenejsemi selecty. Dalo by se však urcite pracovat i efektivneji. 
