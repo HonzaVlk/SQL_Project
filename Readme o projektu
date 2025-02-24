@@ -17,7 +17,7 @@ dělal views, abych nemusel kopírovat řádky kódu. Prišlo mi, že jsem si vy
 slučoval, řadil, počítal rozdíly a vytvářel si průběžné views. V praxi tohle určitě nebude stačit, ale jsem pořád začátečník bez potřebné denní praxe. 
 
 Nedělal jsem průvodní listinu, ale svůj postup, kroky a úvahy jsem začlenil jako --poznamky--  přímo do skriptu, aby bylo hned vidět co, jak a proč jsem dělal.
-Přišlo mi to efektivnejsi i pro čtenáře  mít to hned před očima s kódem. 
+Přišlo mi to efektivnejsi i pro čtenáře  mít to hned před očima v SQL editoru spolu s kodem. 
 
-Požadované tabulky jsem si vytvořil až nakonec, z jednotlivych relevantnich selectů nebo views. Práci bych si asi usnadil, kdybych je vytvořil hned na začátku, ale chtěl
+Požadované tabulky jsem si vytvořil až nakonec, z jednotlivych relevantnich selectů nebo views. Práci bych si asi usnadnil, kdybych je vytvořil hned na začátku, ale chtěl
 jsem postupne pracovat s co nejomezenejsemi selecty. Dalo by se však urcite pracovat i efektivneji. 
