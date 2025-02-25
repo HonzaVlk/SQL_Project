@@ -171,7 +171,7 @@ AND payroll_year != 2021
 GROUP BY payroll_year, odvetvi
 ORDER BY odvetvi, payroll_year;
 
--- ZAVER:
+-- ODPOVED:
 -- Mezi lety 2000 a 2020 mzdy ve vsech odvetvich obecne rostly. V tomto obdobi vsak byly i roky, 
 -- kdy mzdy v nekterych odvetvich mezirocne klesaly. Podrobnosti nize:
 
