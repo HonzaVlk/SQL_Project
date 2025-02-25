@@ -1,5 +1,6 @@
- -- Připravte i tabulku s HDP, GINI koeficientem a populací dalších evropských států
- -- ve stejném období, jako primární přehled pro ČR.
+-- ZADANI: 
+-- Připravte i tabulku s HDP, GINI koeficientem a populací dalších evropských států
+-- ve stejném období, jako primární přehled pro ČR.
 
 -- Nahled do tabulky
  
