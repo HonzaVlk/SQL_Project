@@ -119,7 +119,7 @@ ORDER BY rozdil_mezi_procenty DESC;
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
 -- Serazeno podle nejvyssiho rozdilu rustu mezd a cen.  
 
-   rok  potravina                               meziroční změna
+   rok  potravina                               meziroční rozdíl mezi růstem cen a mezd
 
 -- 2007	Papriky					87.94%
 -- 2013	Konzumní brambory			61.88%
