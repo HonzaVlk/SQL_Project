@@ -1,5 +1,5 @@
--- UKOL:
--- Vytvorit tabulku pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky.
+-- ÚKOL:
+-- Vytvořit tabulku pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky.
 
 -- Jelikoz jsem tak nedelal od zacatku, musim tabulku vytvorit z relevantnich views a dale si je upravit, napr.:
 
