@@ -127,7 +127,7 @@ ORDER BY rok;
 -- ODPOVED: 
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
 -- Serazeno podle nejvyssiho rozdilu rustu mezd a cen.  
-
+   Rok	Potravina				Meziroční rozdíl
 -- 2007	Papriky					87.94%
 -- 2013	Konzumní brambory			61.88%
 -- 2012	Vejce slepičí čerstvá			51.83%
