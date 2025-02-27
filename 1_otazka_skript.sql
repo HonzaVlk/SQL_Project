@@ -1,5 +1,5 @@
 -- Otázka č. 1:
-	-- Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
+-- Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 
 -- Můj postup:
 -- Seznamit se se strukturou vstupnich dat.  
@@ -40,10 +40,9 @@ LEFT JOIN
 LEFT JOIN 
 		czechia_payroll_value_type cpvt ON cp.value_type_code = cpvt.code;
 		
--- Zacit tvorit tabulku s pozadovanym nazvem. 
-	
-CREATE TABLE t_jan_vlkovsky_project_SQL_primary_final
 
+CREATE OR REPLACE VIEW v_jan_vlkovsky_project_SQL_primary_final_1
+AS
 SELECT 
 		cp.*, 
 		cpc.name AS fyzicky_prepocteny, 
@@ -61,17 +60,15 @@ LEFT JOIN
 LEFT JOIN 
 		czechia_payroll_value_type cpvt ON cp.value_type_code = cpvt.code;
 	
--- Overim si, ze tabulka existuje a funguje. 
-	
 SELECT *
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf;
+FROM v_jan_vlkovsky_project_SQL_primary_final_1;
 
 
 -- Zajima me prumerna mzda. To mi ukazuje hodnota 5958 ve sloupci value_type_code.
 -- Vyfiltruji si jen tyto hodnoty. 
 	
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958;
 
 -- Pro analyzu dat si musim upravit tabulku:  
@@ -80,7 +77,7 @@ WHERE value_type_code = 5958;
 -- Sloupec value mi ukazuje hodnoty prumerne mzdy v Kc.
 
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958
 AND odvetvi IS NOT NULL
 ORDER BY odvetvi ASC;
@@ -89,7 +86,7 @@ ORDER BY odvetvi ASC;
 -- Napr. podle tohoto vzoru. 
 
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958
 AND odvetvi = 'Administrativní a podpůrné činnosti'
 ORDER BY payroll_year;
@@ -102,7 +99,7 @@ ORDER BY payroll_year;
 
 
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1
 WHERE value_type_code = 5958
 AND odvetvi = 'Administrativní a podpůrné činnosti'
 AND fyzicky_prepocteny = 'přepočtený'
@@ -112,7 +109,7 @@ ORDER BY payroll_year;
 -- Vidim, ze takto se mi zformatovala i ostatni cisla. Necham tak. 
 
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1
 WHERE value_type_code = 5958
 AND odvetvi = 'Administrativní a podpůrné činnosti'
 AND fyzicky_prepocteny = 'přepočtený'
@@ -121,7 +118,7 @@ ORDER BY payroll_year;
 -- Vidím, že rok 2021 nema vsechny 4 kvartaly, proto 2021 z analyzy vynecham. 
 
 SELECT * 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1
 WHERE value_type_code = 5958
 AND industry_branch_code = 'A'
 AND fyzicky_prepocteny = 'přepočtený'
@@ -134,7 +131,7 @@ SELECT
 	payroll_year,
 	payroll_quarter,
 	industry_branch_code 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958
 AND industry_branch_code = 'A'
 AND fyzicky_prepocteny = 'přepočtený'
@@ -147,7 +144,7 @@ SELECT
     payroll_year, 
     SUM(value) AS total_value,
     industry_branch_code 
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958
 AND industry_branch_code = 'S'
 AND fyzicky_prepocteny = 'přepočtený'
@@ -163,7 +160,7 @@ SELECT
 	odvetvi,    
 	payroll_year AS rok, 
     SUM(value) AS rocni_prumerna_mzda
-FROM t_jan_vlkovsky_project_SQL_primary_final tjvpspf 
+FROM v_jan_vlkovsky_project_SQL_primary_final_1 
 WHERE value_type_code = 5958
 AND fyzicky_prepocteny = 'přepočtený'
 AND odvetvi IS NOT NULL
@@ -192,7 +189,7 @@ ORDER BY odvetvi, payroll_year;
 -- Veřejná správa a obrana; povinné sociální zabezpečení - prum. mzdy rostly kazdy rok krome mezirocne v letech 2010
 -- Vzdělávání - prum. mzdy rostly kazdy rok krome mezirocne v letech 2010
 -- Zdravotní a sociální péče - prum. mzdy rostly kazdy rok 
--- Kulturní, zábavní a rekreační činnosti - prum. mzdy rostly kazdy rok krome mezirocne v letech 2013
+-- Kulturní, zábavní a rekreační činnosti - prum. mzdy rostly azdy rok krome mezirocne v letech 2013
 -- Ostatní činnosti - prum. mzdy rostly kazdy rok. 
 
 
