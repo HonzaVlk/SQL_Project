@@ -1,8 +1,8 @@
- -- Otázka č. 4:
+ -- Otazka c. 4 
  -- Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší 
  -- než růst mezd (větší než 10%)?
 
- -- Zatim nejmene jednoznacne zadani. Trva mi chvili ujasnit si, na co se otazka pta a co pro odpoved musim zjistit.
+ -- Zatim nejmene jednozancne zadani. Trva mi chvili ujasnit si, na co se otazka pta a co pro odpoved musim zjistit.
  -- Asi je to takto: Existuje nejaka potravina, jejiz mezirocni zdrazeni je vice nez 10% nad  
  -- narustem mezirocni mzdy? Takto k zadani budu pristupovat. 
    
@@ -42,7 +42,7 @@ SELECT
 	odvetvi,    
 	payroll_year AS rok, 
     SUM(value) AS rocni_mzda
-FROM t_jan_vlkovsky_project_SQL_primary_final AS t_jan_vlkovsky_project_SQL_primary_final_interim  
+FROM v_jan_vlkovsky_project_SQL_primary_final_1  
 WHERE value_type_code = 5958
 AND fyzicky_prepocteny = 'přepočtený'
 AND odvetvi IS NOT NULL
@@ -113,21 +113,14 @@ ORDER BY rozdil_mezi_procenty DESC;
 -- Vysledek je prekvapivy.
 -- Zatimco udaje k mezirocnimu narustu mezd jsou celkem uveritelne (do 10%),
 -- tak nektere ceny potravin mezirocne vyletely o desitky procent. 
--- Mzdam verim, ale musim si namatkou overit Papriky z predchozich selectů a primarni tabulky czechia_price. Napr.:
+-- Mzdam verim, ale musim si namatkou overit potraviny z predchozich selectů.
 
-SELECT 
-    YEAR(date_from) AS rok,
-    ROUND(AVG(value), 2) AS prumerna_cena
-FROM v_3otazka_full
-WHERE category_code = 117103
-AND YEAR(date_from) IN (2006, 2007)
-GROUP BY YEAR(date_from)
-ORDER BY rok;
-
--- ODPOVED: 
+-- ODPOVED
 -- V techto letech a kategoriich rostly ceny potravin vyrazneji nez mzdy. 
 -- Serazeno podle nejvyssiho rozdilu rustu mezd a cen.  
-   Rok	Potravina				Meziroční rozdíl
+
+   rok  potravina                               meziroční změna
+
 -- 2007	Papriky					87.94%
 -- 2013	Konzumní brambory			61.88%
 -- 2012	Vejce slepičí čerstvá			51.83%
@@ -163,10 +156,3 @@ ORDER BY rok;
 -- 2008	Mrkev					11.35%
 -- 2016	Konzumní brambory			10.45%
 -- 2007	Chléb konzumní kmínový			10.06%
-
-
-
-
-
-
-
