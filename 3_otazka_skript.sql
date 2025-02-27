@@ -66,19 +66,11 @@ WHERE rok IN (2006, 2018)
 GROUP BY potravina
 ORDER BY procentualni_zmena ASC;
 
--- Vidím, že nektere potraviny zlevnily (zaporny rozdil). Toto musim zohlednit v odpovedi!
-
--- Vyradim Jakostni vino bílé, pro ktere neexistuje udaj za rok rok 2006: 
-
-SELECT *
-FROM v_3otazka_full
-WHERE category_name = 'Jakostní víno bílé'
-ORDER BY YEAR(date_from) ASC;
-
+-- Vidím, že nektere potraviny zlevnily (zaporny rozdil). Toto musim zohlednit v odpovedi.
 
 -- ODPOVED: 
 -- V porovnavanem obdobi let 2006 a 2018 nejmene zdrazila kategorie Banany zlute.
--- V tomto obdobo dokonce existuji dve kategorie potravin, které zlevnily: Cukr krystalový a Rajská jablka. 
+-- V tomto obdobo dokonce existuji dve kategorie potravin, které (vyrazne) zlevnily: Cukr krystalový a Rajská jablka. 
  
 
 
